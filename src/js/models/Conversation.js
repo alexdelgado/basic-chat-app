@@ -3,10 +3,12 @@
 export default class Conversation {
 
   id
+  subject
   messages
 
   constructor(data) {
     this.id = data.id
+    this.subject = data.subject
     this.messages = data.messages || []
   }
 

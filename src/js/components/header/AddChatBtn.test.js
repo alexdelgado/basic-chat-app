@@ -4,10 +4,10 @@ import { AddChatBtn } from './AddChatBtn'
 
 describe('Add Chat button', () => {
 
-  let component;
+  let component
 
   const label = 'Add chat'
-  const mockNewConverstation = jest.fn();
+  const mockNewConverstation = jest.fn()
 
   beforeEach(() => {
     component = shallow(<AddChatBtn label={label} newConverstation={mockNewConverstation} />)

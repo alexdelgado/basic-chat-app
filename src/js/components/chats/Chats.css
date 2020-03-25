@@ -1,3 +1,29 @@
 .chats {
   flex: 1 1 20%;
 }
+
+.chats .chat {
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  display: flex;
+  font-size: 1rem;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.chats .chat--active {
+  background: #fbfbfb;
+}
+
+.chats .chat__subject {
+  flex: 1;
+}
+
+.chats .chat__toggle {
+  background: none;
+  border: none;
+  color: #aaa;
+  font-size: 24px;
+  line-height: 1em;
+}

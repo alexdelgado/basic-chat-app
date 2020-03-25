@@ -1,11 +1,25 @@
 // src/js/actions/index.js
 
-import { CHAT_NEW_CONVERSATION } from '../constants'
+import * as constants from '../constants'
 
 export function newConverstation(payload) {
   return {
-    type: CHAT_NEW_CONVERSATION,
+    type: constants.CHAT_NEW_CONVERSATION,
     payload
   }
 }
 
+export function selectConversation(payload) {
+  return {
+    type: constants.CHAT_SELECT_CONVERSATION,
+    payload
+  }
+}
+
+
+export function deleteConversation(payload) {
+  return {
+    type: constants.CHAT_DELETE_CONVERSATION,
+    payload
+  }
+}
