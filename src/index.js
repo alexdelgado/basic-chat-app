@@ -5,12 +5,16 @@ import { Provider } from 'react-redux';
 import './index.css';
 
 import store from './js/store';
-import App from './js/components/app/App';
+import Header from './js/components/header/Header';
+import Main from './js/components/main/Main';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <div className="chat">
+      <Header />
+      <Main />
+    </div>
   </Provider>,
   document.getElementById('root')
 );
