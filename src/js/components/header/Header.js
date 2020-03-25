@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 import AddChatBtn from './AddChatBtn'
 
@@ -8,7 +8,7 @@ function Header(props) {
       <h1>{props.title}</h1>
       <AddChatBtn label="Add chat" />
     </header>
-  );
+  )
 }
 
-export default Header;
+export default Header

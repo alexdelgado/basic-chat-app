@@ -1,6 +1,6 @@
-import React from 'react';
-import { mount } from 'enzyme';
-import Header from './Header';
+import React from 'react'
+import { mount } from 'enzyme'
+import Header from './Header'
 import AddChatBtn from './AddChatBtn'
 
 it('renders properly', () => {
@@ -12,4 +12,4 @@ it('renders properly', () => {
 
   // displays btn
   expect(component.find(AddChatBtn).length).toEqual(1)
-});
+})

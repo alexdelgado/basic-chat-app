@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 
-import History from '../history/History';
-import Conversation from '../conversation/Conversation';
+import History from '../history/History'
+import Conversation from '../conversation/Conversation'
 
 function Main() {
   return (
@@ -9,7 +9,7 @@ function Main() {
       <History />
       <Conversation />
     </main>
-  );
+  )
 }
 
-export default Main;
+export default Main
