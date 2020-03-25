@@ -1,9 +1,28 @@
 import React from 'react'
+import { connect } from 'react-redux'
 
-function AddChatBtn(props) {
-  return (
-    <button className="chat__add-btn">{props.label}</button>
-  )
+import { newConverstation } from '../../actions'
+
+
+function mapDispatchToProps(dispatch) {
+  return {
+    newConverstation: (request) => {
+      return dispatch(newConverstation(request))
+    },
+  }
 }
 
-export default AddChatBtn
+export class AddChatBtn extends React.Component {
+
+  handleClick = (event) => {
+    this.props.newConverstation()
+  }
+
+  render() {
+    return (
+      <button onClick={this.handleClick}>{this.props.label}</button>
+    )
+  }
+}
+
+export default connect(null, mapDispatchToProps)(AddChatBtn)

@@ -1,15 +1,20 @@
 import React from 'react'
-import { mount } from 'enzyme'
+import { shallow } from 'enzyme'
 import Header from './Header'
-import AddChatBtn from './AddChatBtn'
 
-it('renders properly', () => {
-  const title = "An awesome chat app"
-  const component = mount(<Header title={title} />)
+describe('Header', () => {
 
-  // displays h1 text
-  expect(component.find('h1').text()).toEqual(title)
+  let component;
 
-  // displays btn
-  expect(component.find(AddChatBtn).length).toEqual(1)
+  const title = 'An awesome chat app'
+  const btn = { label: 'Add chat' }
+
+  beforeEach(() => {
+    component = shallow(<Header title={title} btn={btn} />)
+  })
+
+  it('should render properly', () => {
+    expect(component.find('h1').text()).toBe(title)
+    expect(component.find('Connect(AddChatBtn)')).toHaveLength(1)
+  })
 })

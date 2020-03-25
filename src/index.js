@@ -12,7 +12,7 @@ import * as serviceWorker from './serviceWorker';
 ReactDOM.render(
   <Provider store={store}>
     <div className="chat">
-      <Header title="An awesome chat app" />
+      <Header title="An awesome chat app" btn={{label: 'Add chat'}} />
       <Main />
     </div>
   </Provider>,

@@ -1,10 +1,24 @@
 import React from 'react'
-import { mount } from 'enzyme'
-import AddChatBtn from './AddChatBtn'
+import { shallow } from 'enzyme'
+import { AddChatBtn } from './AddChatBtn'
 
-it('renders properly', () => {
-  const label = "Add chat"
-  const component = mount(<AddChatBtn label={label} />)
+describe('Add Chat button', () => {
 
-  expect(component.find('button').text()).toEqual(label)
+  let component;
+
+  const label = 'Add chat'
+  const mockNewConverstation = jest.fn();
+
+  beforeEach(() => {
+    component = shallow(<AddChatBtn label={label} newConverstation={mockNewConverstation} />)
+  })
+
+  it('should render properly', () => {
+    expect(component.text()).toBe(label)
+  })
+
+  it('should dispatch the newConversation action', () => {
+    component.find('button').simulate('click')
+    expect(mockNewConverstation.mock.calls.length).toBe(1)
+   })
 })

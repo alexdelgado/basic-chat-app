@@ -4,13 +4,13 @@ import AddChatBtn from './AddChatBtn'
 
 import './Header.css'
 
-function Header(props) {
-  return (
-    <header className="chat__header header">
-      <h1>{props.title}</h1>
-      <AddChatBtn label="Add chat" />
-    </header>
-  )
+export default class Header extends React.Component {
+  render() {
+    return (
+      <header className="chat__header header">
+        <h1>{this.props.title}</h1>
+        <AddChatBtn label={this.props.btn.label} />
+      </header>
+    )
+  }
 }
-
-export default Header
