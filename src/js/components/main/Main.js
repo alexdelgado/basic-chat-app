@@ -1,13 +1,15 @@
 import React from 'react'
 
-import History from '../history/History'
-import Conversation from '../conversation/Conversation'
+import Chats from '../chats/Chats'
+import Chat from '../chat/Chat'
+
+import './Main.css'
 
 function Main() {
   return (
-    <main className="chat__main">
-      <History />
-      <Conversation />
+    <main className="main">
+      <Chats />
+      <Chat />
     </main>
   )
 }

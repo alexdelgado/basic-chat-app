@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import History from './History';
+import Chats from './Chats';
 
 it('renders properly', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<History />, div);
+  ReactDOM.render(<Chats />, div);
 });
