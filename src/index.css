@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.chat__main {
+  display: flex;
+}
+
+.chat__history {
+  border:  1px solid;
+  border-right: 0;
+  flex: 1 1 20%;
+}
+
+.chat__conversation {
+  border: 1px solid;
+  flex: 1 1 80%;
+}
