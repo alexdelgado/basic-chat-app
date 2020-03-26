@@ -1,5 +1,12 @@
 // src/js/models/Message.js
 
+/**
+ * Conversation
+ *
+ * @param int id Conversation ID
+ * @param string subject Conversation subject
+ * @param Message[] messages Array containing messages
+ */
 export default class Conversation {
 
   id

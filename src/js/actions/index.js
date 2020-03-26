@@ -2,6 +2,7 @@
 
 import * as constants from '../constants'
 
+// Converstions
 export function newConverstation(payload) {
   return {
     type: constants.CHAT_NEW_CONVERSATION,
@@ -16,10 +17,17 @@ export function selectConversation(payload) {
   }
 }
 
-
 export function deleteConversation(payload) {
   return {
     type: constants.CHAT_DELETE_CONVERSATION,
+    payload
+  }
+}
+
+// Chat
+export function addMessage(payload) {
+  return {
+    type: constants.CHAT_ADD_MESSAGE,
     payload
   }
 }

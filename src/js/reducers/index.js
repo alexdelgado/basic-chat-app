@@ -34,6 +34,21 @@ function rootReducer(state = initialState, action) {
         conversations: state.conversations.filter((conversation) => conversation.id !== action.payload.conversationId)
       })
 
+    case constants.CHAT_ADD_MESSAGE:
+      const idx = state.conversations.findIndex((c) => c.id === state.currentConversationId)
+
+      if (idx >= 0) {
+        const conversations = state.conversations
+        conversations[idx] = new Conversation(conversations[idx])
+        conversations[idx].addUserMessage(action.payload)
+        conversations[idx].addAgentMessage('You said: ' + action.payload.message)
+
+        return Object.assign({}, state, {
+          conversations
+        })
+      }
+      break
+
     default:
       return state
   }

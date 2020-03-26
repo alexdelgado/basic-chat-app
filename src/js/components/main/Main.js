@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Chats from '../chats/Chats'
-import Chat from '../chat/Chat'
+import Conversation from '../conversation/Conversation'
 
 import './Main.css'
 
@@ -9,7 +9,7 @@ function Main() {
   return (
     <main className="main">
       <Chats />
-      <Chat />
+      <Conversation />
     </main>
   )
 }

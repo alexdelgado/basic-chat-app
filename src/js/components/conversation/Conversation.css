@@ -1,0 +1,65 @@
+.conversation {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 80%;
+  overflow: hidden;
+  padding: 15px;
+  width: calc(80% - 30px);
+}
+
+.conversation .conversation__body {
+  height: calc(100% - 125px);
+  overflow-y: auto;
+}
+
+.conversation .message {
+  color: #333;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+
+
+.conversation .message--guest {
+  justify-content: flex-end;
+}
+
+
+.conversation .message__container {
+  background: #fbfbfb;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  min-width: 300px;
+  padding: 15px;
+}
+
+.conversation .message--guest .message__container {
+  background: #e3eeff;
+  border: 1px solid #dfe2e8;
+}
+
+.conversation .message__timestamp {
+  color: #555;
+  flex: 1 1 100%;
+  font-size: .85rem;
+  margin-bottom: 10px;
+}
+
+.conversation .message__timestamp::before {
+  content: "Sent on: "
+}
+
+.conversation__form {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.conversation__input {
+  height: 50px;
+  font-size: 1rem;
+  margin: 0 auto;
+  padding: 10px 15px;
+  width: 80%;
+}
+
