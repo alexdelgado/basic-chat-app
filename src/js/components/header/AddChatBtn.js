@@ -3,7 +3,6 @@ import { connect } from 'react-redux'
 
 import { newConverstation } from '../../actions'
 
-
 function mapDispatchToProps(dispatch) {
   return {
     newConverstation: (request) => {

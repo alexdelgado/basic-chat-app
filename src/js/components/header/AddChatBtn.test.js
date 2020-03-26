@@ -20,5 +20,5 @@ describe('Add Chat button', () => {
   it('should dispatch the newConversation action', () => {
     component.find('button').simulate('click')
     expect(mockNewConverstation.mock.calls.length).toBe(1)
-   })
+  })
 })

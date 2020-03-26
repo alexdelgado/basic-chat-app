@@ -20,7 +20,7 @@ export default class Conversation {
   }
 
   addUserMessage(message) {
-    message.id = this.messages.length + 1;
+    message.id = this.messages.length + 1
     this.messages.push(message)
   }
 

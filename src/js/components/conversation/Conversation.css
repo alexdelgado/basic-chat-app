@@ -1,7 +1,7 @@
 .conversation {
   display: flex;
-  flex-direction: column;
   flex: 1 1 80%;
+  flex-direction: column;
   overflow: hidden;
   padding: 15px;
   width: calc(80% - 30px);
@@ -19,11 +19,9 @@
   margin-bottom: 15px;
 }
 
-
 .conversation .message--guest {
   justify-content: flex-end;
 }
-
 
 .conversation .message__container {
   background: #fbfbfb;

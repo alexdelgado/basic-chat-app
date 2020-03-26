@@ -2,7 +2,6 @@ import React from 'react'
 import { shallow } from 'enzyme'
 import { Chats } from './Chats'
 
-import { CHAT_WELCOME_MESSAGE } from '../../constants'
 import Conversation from '../../models/Conversation'
 
 describe('Chats', () => {

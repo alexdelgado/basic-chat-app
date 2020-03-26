@@ -28,15 +28,15 @@ export class Conversation extends React.Component {
       value: ''
     }
 
-    this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleInput = this.handleInput.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this)
+    this.handleInput = this.handleInput.bind(this)
   }
 
   componentDidUpdate() {
     const $message = document.querySelector('.message:last-child')
 
     if ($message) {
-      $message.scrollIntoView();
+      $message.scrollIntoView()
     }
   }
 

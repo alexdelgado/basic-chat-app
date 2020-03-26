@@ -4,7 +4,7 @@ import Header from './Header'
 
 describe('Header', () => {
 
-  let component;
+  let component
 
   const title = 'An awesome chat app'
   const btn = { label: 'Add chat' }
